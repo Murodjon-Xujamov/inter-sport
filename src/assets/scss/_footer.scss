@@ -1,0 +1,50 @@
+.footer{
+    background: dodgerblue;
+    padding: 3rem 0;
+    position: relative;
+
+    .footer__title{
+        font-weight: bold;
+        margin-bottom: 6px;
+        @media (max-width: 600px) {
+            margin-top: 1rem;
+        }
+    }
+
+    .footer__link{
+        margin-top: 12px;
+
+        a{
+            position: relative;
+            color: #e2e2e2;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.2s ease;
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                height: 1px;
+                width: 0;
+                background: #fff;
+                transition: 0.2s ease;
+            }
+            &:hover::before{
+                width: 100%;
+            }
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+
+    .footer__icons{
+        display: flex;
+        align-items: center;
+        *{
+            margin-right: 6px;
+            margin-top: 6px;
+            cursor: pointer;
+        }
+    }
+}

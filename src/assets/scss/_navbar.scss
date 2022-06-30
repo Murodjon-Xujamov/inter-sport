@@ -1,0 +1,104 @@
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper{
+    background: dodgerblue !important;
+
+    a{
+        color: #000;
+    }
+}
+nav{
+    background:dodgerblue;
+    z-index: 9999;
+    position: relative;
+    &.fixed{
+        position: fixed;
+    }
+
+    .media-menu{
+        display: flex;
+        position: fixed;
+        right: 100%;
+        top: 0;
+        background: dodgerblue;
+        height: 100%;
+        width: 100%;
+        z-index: 9999;
+        transition: 0.5s ease;
+        &.openMenu{
+            right: 0;
+        }
+
+        .media-list{
+            width: 100%;
+            padding: 15px;
+            margin: auto;
+
+            li{
+                padding: 12px 0;
+                font-size: 18px;
+
+                a{
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .nav-list{
+        display: flex;
+
+        .menu-bars{
+            display: none;
+            @media (max-width: 992px){
+                display: block;
+            }
+        }
+
+        li{
+            display: flex;
+            align-items: center;
+            position: relative;
+            font-size: 14px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.2s ease;
+            &:hover{
+                background: rgba($color: #000, $alpha: .2);
+            }
+
+            >ul{
+                background: dodgerblue;
+                position: absolute;
+                left: 0;
+                top: 100%;
+                min-width: 150%;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.2s ease;
+            }
+
+            &:hover > ul{
+                opacity: 1;
+                visibility: inherit;
+            }
+
+            a{
+                display: flex;
+                align-items: center;
+                color: #fff;
+                white-space: nowrap;
+                padding: 1rem 12px;
+            }
+        }
+        >li {
+            @media (max-width: 992px) {
+                display: none;
+            }
+        }
+
+        .nav-lang{
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+    }
+}

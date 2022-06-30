@@ -1,0 +1,13 @@
+.goal-box{
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .description{
+        margin: 1rem 0;
+        color: #131313;
+        @media (max-width: 767px){
+            font-size: 12px;
+        }
+    }
+}

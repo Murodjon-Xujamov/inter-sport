@@ -1,0 +1,50 @@
+html{
+  overflow-x: hidden;
+}
+body{
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+*{
+  font-family: sans-serif;
+  color: #fff;
+}
+ul{
+  padding-left: 0;
+  margin: 0;
+}
+ul li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+.title-block{
+  background: #343334;
+}
+.title{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  width: max-content;
+  color: #fff;
+  background: dodgerblue;
+  padding: 10px 45px 10px 30px;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+@media (max-width: 600px){
+  .MuiGrid-root.MuiGrid-container,
+  .MuiContainer-root.MuiContainer-maxWidthLg.css-1oqqzyl-MuiContainer-root:not(nav .MuiContainer-root.MuiContainer-maxWidthLg.css-1oqqzyl-MuiContainer-root)
+  {
+    padding-top: 1rem !important;
+    padding-top: 1rem !important;
+  }
+  .title{
+    font-size: 12px;
+    padding: 8px 40px 8px 16px;
+  }
+}
